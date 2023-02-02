@@ -185,6 +185,12 @@ form{
     border-bottom-right-radius: 5px;
 
 }
+.hint{
+    margin-top: 100px;
+    color: var(--dark-p);
+    opacity: 0.4;
+}
+
 .status-container{
     display: flex;
     width: 30%;
@@ -255,6 +261,9 @@ form{
         border-radius: 5px;
         box-shadow: var(--box-shadow);
         color: var(--meek-p);
+    }
+    .hint{
+        display: none;
     }
     
 }
