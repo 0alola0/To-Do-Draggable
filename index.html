@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">  
+  <title>Frontend Mentor | Todo app</title>
+
+
+</head>
+<body>
+  <div class="background-div">
+
+  </div>
+
+  <div class="app-container">
+    <div class="label-div">
+      <h1 class="logo">TODO</h1>
+      <img class="theme-image" id="toggle" alt="">
+    </div>
+
+    <form action="" data-new-task-form>
+      <button class="submit-task">+</button>
+      <input type="text" class="add-task" placeholder="what would you like to add"  data-new-task-input>
+    </form>
+
+    <div class="tasks-container">
+      <ul class="tasks" data-list>
+
+      </ul>
+
+    </div>
+    <div class="action-container">
+
+      <p class="meek-p items-left"></p>
+
+      <div class="status-container">
+        <p onclick="renderTasks()" class="meek-container hover-effect">All</p>
+        <p onclick="filterActive()" class="meek-container hover-effect">Active</p>
+        <p onclick="filterComplete()" class="meek-container hover-effect">Completed</p>
+      </div>
+
+      <p onclick="clearCompleted()" class="meek-p hover-effect">Clear Completed</p>
+
+    </div>
+
+    <div class="status-container-mobile">
+      <p onclick="renderTasks()" class="meek-container hover-effect">All</p>
+      <p onclick="filterActive()" class="meek-container hover-effect">Active</p>
+      <p onclick="filterComplete()" class="meek-container hover-effect">Completed</p>
+    </div>
+
+  </div>
+
+
+  
+
+
+
+
+
+ 
+
+  <template id="task-template">
+    <li class="task drag" id="draggable" draggable="true">
+      <input type="checkbox" class="completor">
+      <label class="label-container"><span class="custom-checkbox"></span></label>
+      <button class="delete-single"><img class="cross" src="./images/icon-cross.svg" alt=""></button>
+    </li>
+  </template>
+
+
+
+  <script src="app.js"></script>
+</body>
+</html>
